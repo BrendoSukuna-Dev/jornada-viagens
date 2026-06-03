@@ -6,9 +6,9 @@
 }
 
 :root {
-  --brackground-primary-color: #ffffff;
-  --brackground-secondary-color: #f5f5f5;
-  --brackground-tertiary-color: #000000;
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
 
   --butoon-primary-color: #8f0101;
   --butoon-secondary-color: #b81515;
@@ -36,4 +36,8 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
 }
