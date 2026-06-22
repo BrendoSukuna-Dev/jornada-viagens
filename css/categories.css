@@ -1,0 +1,78 @@
+.categories .section-title {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.categories-cards a.card {
+  width: 312px;
+  height: 220px;
+  background-color: var(--background-secondary-color);
+  text-align: center;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+.categories-cards .card h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+
+.categories h3.nacional {
+  white-space: nowrap; /* Impede que o texto quebre para a linha de baixo */
+}
+
+.categories-cards .card.single-line {
+  padding-top: 50px;
+}
+
+.categories-cards .card.single-line.transfer img {
+  margin: 10px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .categories .section-title {
+    width: 100%;
+  }
+  .categories-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 648px; /* Trava o container para caber apenas 2 cards */
+    margin-left: auto; /* Centraliza o container */
+    margin-right: auto; /* Centraliza o container */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .categories-cards {
+    max-width: 884px; /* Atualiza para o novo tamanho de 2 cards maiores */
+  }
+  .categories-cards .card {
+    width: 430px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .categories-cards {
+    max-width: 100%; /* Remove a trava para permitir os 4 cards na mesma linha */
+  }
+  .categories-cards .card {
+    width: 280px;
+  }
+  .categories h3.nacional {
+    white-space: normal; /* Desliga o nowrap e permite a quebra de linha novamente */
+    max-width: 160px;
+    margin: 24px auto 0; /* Dica: reduzi a margem do seu código para alinhar melhor com o card ao lado */
+  }
+}
