@@ -64,7 +64,8 @@
 
 @media screen and (min-width: 1440px) {
   .categories-cards {
-    max-width: 81%;
+    max-width: 1200px; /* Dá o espaço exato e necessário para os 4 cards e seus gaps */
+    flex-wrap: nowrap; /* Força todos os 4 cards a ficarem estritamente na mesma linha */
   }
   .categories-cards .card {
     width: 280px;
